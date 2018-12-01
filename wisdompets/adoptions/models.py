@@ -9,4 +9,8 @@ class Pet(models.Model):
     bread = models.CharField(max_length=30, blank=True)
     descrption = models.TextField()
     sex = models.CharField(choices=SEX_CHOICES, max_length=1, blank=True)
-    submission_data = models.Data
+    submission_data = models.DateTimeField()
+    age = models.IntegerField(null=True)
+
+class Vaccine(models.Model):
+    name = models.CharField(max_length=50)
