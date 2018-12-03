@@ -17,7 +17,7 @@
         <li>{{ vaccinations.name }}</li>
       {% endfor %}
     </ul>
-  {% endfor %}
+  {% endif %}
   <p>Submitted by: {{ pet.submitter }}</p>
-  <p>Submitted on: {{ pet.submission_date|date }}</p>
+  <p>Submitted on: {{ pet.submission_date|date:'M D Y' }}</p>
 </div>
