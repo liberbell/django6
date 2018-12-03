@@ -1,1 +1,7 @@
-Pet detail
+<div>
+  <h3>{{ pet.petname|capfirst }}</h3>
+  <p>{{ pet.species }}</p>
+  {% if pet.breed %}
+    <p>Breed: {{ pet.breed }}</p>
+  {% endif %}
+</div>
